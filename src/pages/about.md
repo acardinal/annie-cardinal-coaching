@@ -9,7 +9,7 @@ I'm a personal finance nerd and former mechanical engineer and design studio lea
 
 But as David Byrne asked, [Well, how did I get here?](https://www.youtube.com/watch?v=5IsSpAOD6K8&pp=ygUSb25jZSBpbiBhIGxpZmV0aW1l)
 
-![Slow and steady wins the race! A sunny day in Boston.](/src/assets/images/IMG_8420.jpg)
+![Slow and steady wins the race! A sunny day in Boston.](../assets/images/IMG_8420.jpg)
 
 Life is a funny thing - it never works out the way one expects. I grew up in the California Bay Area, went to school in New Jersey, lived in Austin, Texas for almost 8 years, and now live in the Midwest. After living in four very different places, I've learned a lot about what really matters in life, the differences between people, and the things that everyone has in common. Let me share my story, and if it resonates with you, [let's talk](/contact).
 
@@ -36,7 +36,7 @@ During this time we also discovered the FIRE (Financial Independence Retire Earl
 
 While we decided it was infeasible to stop working entirely before having offspring, we compromised on having enough buffer saved up to spend time with our child during their early years, and working part-time to supplement our savings. We settled in for the long haul and worked our engineering jobs for the following 6 years.
 
-![A spontaneous road trip to Valley of Fire State Park.](/src/assets/images/Valley_of_Fire_0129.jpg)
+![A spontaneous road trip to Valley of Fire State Park.](../assets/images/Valley_of_Fire_0129.jpg)
 
 ## Then Everything Changed: A Shift in Perspective
 

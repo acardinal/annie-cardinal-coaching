@@ -67,4 +67,7 @@ export default defineConfig({
       },
     },
   },
+  experimental: {
+    assets: true,
+  },
 });

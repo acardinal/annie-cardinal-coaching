@@ -4,6 +4,9 @@ import { BLOG } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 import SinglePost from '~/components/blog/SinglePost.astro';
 import ToBlogLink from '~/components/blog/ToBlogLink.astro';
+import Header from '~/components/widgets/Header.astro';
+
+import { headerData } from '~/data';
 
 import { getCanonical, getPermalink } from '~/utils/permalinks';
 import { fetchPosts } from '~/utils/blog';
@@ -33,6 +36,19 @@ const meta = {
 ---
 
 <Layout {meta}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          type: "primary",
+          text: 'Contact Me',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
   <SinglePost post={{ ...post, image: meta.image }} url={url} />
   <ToBlogLink />
 </Layout>

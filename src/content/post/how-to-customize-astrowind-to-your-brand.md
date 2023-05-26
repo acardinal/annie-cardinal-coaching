@@ -1,5 +1,6 @@
 ---
 publishDate: 2023-01-06T00:00:00Z
+draft: true
 title: How to customize AstroWind template to suit your branding
 excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
 image: ~/assets/images/colors.jpg

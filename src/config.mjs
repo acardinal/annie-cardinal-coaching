@@ -1,4 +1,4 @@
-import defaultImage from './assets/images/default.png';
+import defaultImage from './assets/images/Hula_Hoop_Square.jpg';
 
 const CONFIG = {
   name: 'Annie Cardinal Coaching',
@@ -9,7 +9,7 @@ const CONFIG = {
 
   title: 'Annie Cardinal Coaching',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    'Empowering you to have a healthy relationship with your money.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"

@@ -2,7 +2,8 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -13,6 +14,8 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import { headerData } from '~/data';
+
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -21,187 +24,164 @@ const meta = {
 ---
 
 <Layout {meta}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          type: "primary",
+          text: 'Contact Me',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
   <!-- Hero Widget ******************* -->
-
-  <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+  
+  <Hero2
+    callToAction={{ text: 'Ready to start?', href: '/contact' }}
+    callToAction2={{ text: 'Learn more', href: '/services' }}
+    image={{ src: import('~/assets/images/Hula_Hoop_Square.jpg'), alt: 'Annie enjoying a bright winter day hula hooping on frozen Lake Harriet in Minneapolis' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden lg:inline">create your website <br class="2xl:hidden"/> with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
+      Ready to be <span class="text-accent dark:text-white highlight">empowered</span> <br />
+      to make your own money decisions?
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
+        <span class="font-semibold">Hi, I'm Annie.</span> I'm an empathy-focused money coach. My goal is to empower you to make your own decisions through improved financial literacy.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+      Let's work together to build a healthy relationship with your money and see what's possible.
     </Fragment>
-  </Hero>
+  </Hero2>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
-
+  <!-- <Note /> -->
   <!-- Features Widget *************** -->
-
   <Features
-    highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    highlight="Money Coaching Services"
+    title="Let me help you"
+    subtitle="I provide 1:1 money coaching services to individuals. You're a real human person, so your coaching process is customized just for you."
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'Evaluating your financial situation',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
+            "I'll help provide a holistic overview of your finances so you have a starting point for decision-making.",
+          icon: 'tabler:chart-donut',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'Teaching money management strategies',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
+            "Whether you're scared of budgeting, need to pay down debt, build credit, or want a fresh look at your current process, I'm here to help.",
+          icon: 'tabler:chart-bar',
         },
         {
-          title: 'Best Practices',
+          title: 'Discussing short and long-term goals',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:list-check',
+            "Are you wondering if you can quit your job, buy a house, retire early, or start a cat sanctuary? Let's discuss what's possible!",
+          icon: 'tabler:rocket',
         },
       ],
       [
         {
-          title: 'Excellent Page Speed',
+          title: 'Brainstorming creative solutions',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-          icon: 'tabler:rocket',
-        },
-        {
-          title: 'Search Engine Optimization (SEO)',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
-        },
-        {
-          title: 'Open to new ideas and contributions',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            "There are so many ways to live a balanced life that break outside the norm. Let's find one that works for you!",
           icon: 'tabler:bulb',
+        },
+        {
+          title: 'Educating about money topics',
+          description:
+            "I'll teach you about different topics so you're equipped to make your own decisions.",
+          icon: 'tabler:books',
+        },
+        {
+          title: 'Answering your money questions',
+          description:
+            "My process is non-judgmental. Let me answer your questions in a safe and comfortable environment.",
+          icon: 'tabler:question-mark',
         },
       ],
     ]}
-  />
+    />
 
   <!-- Content Widget **************** -->
 
   <Content
-    highlight="Inside template"
-    title="And what's inside? ..."
+    highlight="Who I can help"
+    title="Do you need money coaching?"
     items={[
       {
-        title: 'Per ei quaeque sensibus',
+        title: "You're living life on autopilot",
         description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+          "Maybe you're making money but don't know how much to save to reach your goals, or what goals are even possible. You don't want to work forever.",
       },
       {
-        title: 'Cu imperdiet posidonium sed',
+        title: "You're ready for a change",
         description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+          "Maybe you're in a toxic workplace, want to take a break, or are itching to do something different.",
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: "You're ready to gain control of your finances",
         description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+          "Maybe you're scared of budgeting but want to set yourself up for the future and need someone to teach you the ropes.",
       },
     ]}
     image={{
-      src: import('~/assets/images/caos.jpg'),
-      alt: 'Colorful Image',
+      src: import('~/assets/images/IMG_6397.jpg'),
+      alt: 'Sketching the vista and skipping stones at the end of the Homer Spit in Alaska',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
-      tacimates.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">What's next? Is this really it?</h3>
+      If you've asked yourself these questions, then I'm here to help. Believe me, I've been there too.
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Content Widget **************** 
 
   <Content
     isReversed
     isAfterContent
+    highlight="About You"
+    title="Who needs these services?"
     items={[
       {
-        title: 'Per ei quaeque sensibus',
+        title: "You are finally making money but don't know what to do with it.",
       },
       {
-        title: 'Cu imperdiet posidonium sed',
+        title: 'You are ready for a change but need to feel comfortable before taking the leap.',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: "You've started your career and want to know if this is it for the rest of your life.",
       },
       {
-        title: 'Per ei quaeque sensibus',
+        title: "You don't know if you'll ever be able to retire, or what that realistically looks like.",
       },
       {
-        title: 'Cu imperdiet posidonium sed',
+        title: "You have trouble with budgeting, saving, and spending, and want non-judgmental help.",
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: 'You are curious about personal finance and are ready to make your own decisions about money.',
       },
     ]}
     image={{
-      src: import('~/assets/images/vintage.jpg'),
-      alt: 'Vintage Image',
+      src: import('~/assets/images/Chicken_Square.jpg'),
+      alt: 'Annie holding a beautiful chicken and laughing',
     }}
   />
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/creativity.jpg'),
-      alt: 'Steps image',
-    }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
+-->
+  
+  <!-- Testimonials Widget ************** -->
+<!--
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    highlight="Components"
+    title="What people are saying about Annie"
+    subtitle="Kind words from satisfied customers"
+    highlight="Testimonials"
     items={[
       {
         title: 'Headers',
@@ -221,58 +201,17 @@ const meta = {
           'Display your product in action and how the Features actually create a solution for your target customer.',
         icon: 'flat-color-icons:todo-list',
       },
-      {
-        title: 'Content',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'icon-park:page-template',
-      },
     ]}
   />
-
+ -->
   <!-- HighlightedPosts Widget ******* -->
 
   <LatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-			Astro is a very interesting technology. Thanks.
+    title="Need some inspiration? Visit my blog!"
+    information={`Learn more about general personal finance topics, simple living tips and tricks, fun low-cost activities and meal ideas, and lessons I've learned along my journey.
 		`}
     postIds={[
-      'get-started-website-with-astro-tailwind-css.md',
-      'how-to-customize-astrowind-to-your-brand.md',
-      'useful-resources-to-create-websites.md',
-      'astrowind-template-in-depth.md',
+      'welcome-post.md',
     ]}
   />
 
@@ -280,54 +219,43 @@ const meta = {
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
+    subtitle="Everyone is unique, but many folks do have the same questions."
     highlight="FAQs"
     items={[
       [
         {
-          question: 'What do I need to start?',
+          question: 'How does money coaching work?',
           answer:
-            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+            "Through empathetic 1:1 sessions, I'll guide you through exercises and ask thoughtful questions to help you gain comfort with your money. We'll work at a pace that's comfortable for you.",
         },
         {
-          question: 'How to install the Astro + Tailwind CSS template?',
+          question: 'How does your process work?',
           answer:
-            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
+            "After a free intro call and questionnaire, I'll create a custom coaching plan for you that will outline our timeline, milestones, goals, and pricing. The process adapts to your effort level - the more you put in, the more you get out.",
         },
         {
-          question: "What's something that you don't understand?",
+          question: "How much does it cost?",
           answer:
-            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+            "I am a fee-only coach, so you pay me directly for my services. I charge either per session or for a package of sessions. You'll know the amount up front before we start working together, and I'll be very transparent.",
         },
       ],
       [
         {
-          question: "What's an example of when you changed your mind?",
+          question: "Do you manage money or advise on investments?",
           answer:
-            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+            "Nope! Your money is yours, and I have no interest in managing it for you. I do not provide investment advice - you should see a licensed professional for help with that.",
         },
         {
-          question: 'What is something that you would like to try again?',
+          question: "Can you just make a budget for me?",
           answer:
-            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+            "Sure I could, but you know yourself best. I'm here to teach you how to make a budgeting system that works for you. Think of me as your personal trainer for money - you still have to put in the work, but I'll provide the exercises and accountability.",
         },
         {
-          question: 'If you could only ask one question to each person you meet, what would that question be?',
+          question: "Why would you be interested in helping me?",
           answer:
-            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+            "Because I feel like this is my way of contributing to society and breaking the system. I love helping people escape the grind and live a life they have control over. It's a fulfilling way to spend my time and creative energy.",
         },
       ],
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
     ]}
   />
 
@@ -335,18 +263,16 @@ const meta = {
 
   <CallToAction
     callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
+      text: "Ready for what's next?",
+      href: '/contact',
     }}
   >
     <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Let me help you find your balance.
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Gain control of your finances and determine the direction of your life. I'm here to help you find your balance, whatever that may be.
     </Fragment>
   </CallToAction>
 </Layout>

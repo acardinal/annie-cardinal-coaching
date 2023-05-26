@@ -1,5 +1,6 @@
 ---
 publishDate: 2023-01-08T00:00:00Z
+draft: true
 title: AstroWind template in depth
 description: Lorem ipsum dolor sit amet
 excerpt: Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas

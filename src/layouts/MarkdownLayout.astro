@@ -1,7 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import { MetaSEO } from '~/types';
+import { headerData } from '~/data';
 
 export interface Props {}
 
@@ -13,6 +16,19 @@ const meta: MetaSEO = {
 ---
 
 <Layout {meta}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          type: "primary",
+          text: 'Contact Me',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
     <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">{frontmatter.title}</h1>
     <div
@@ -21,4 +37,18 @@ const meta: MetaSEO = {
       <slot />
     </div>
   </section>
+  <CallToAction
+  callToAction={{
+    text: "Ready for what's next?",
+    href: '/contact',
+  }}
+>
+  <Fragment slot="title">
+    Let me help you find your balance.
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Gain control of your finances and determine the direction of your life. I'm here to help you find your balance, whatever that may be.
+  </Fragment>
+</CallToAction>  
 </Layout>

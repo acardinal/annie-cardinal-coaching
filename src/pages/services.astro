@@ -1,0 +1,196 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+import Headline from '~/components/blog/Headline.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import { headerData } from '~/data';
+
+const meta = {
+  title: 'Services',
+  description: SITE.description,
+  //dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          type: "primary",
+          text: 'Contact Me',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+  <Hero2
+    image={{ src: import('~/assets/images/Chicken_Square.jpg'), alt: 'Annie holding a beautiful chicken. Such gorgeous (and crazy) dinosaurs!' }}
+    >
+    <Fragment slot="title">
+      Money coaching is a <span class="text-accent dark:text-white highlight">process.</span> Are you ready to <span class="text-accent dark:text-white highlight">take control?</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">I'm an empathy-focused money coach.</span> Everyone is at a different point in their journey, and we all have different priorities and circumstances. I customize every experience to the individual.<br /><br />
+        Let me walk through the general process and some of the ways I can help you.
+      </span>
+    </Fragment>
+    </Hero2>
+  <!-- <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+  </section>
+  -->
+  <Features
+    highlight="Money Coaching Services"
+    title="Let me help you"
+    subtitle="I provide 1:1 money coaching services to individuals. You're a real human person, so your coaching process is customized just for you."
+    items={[
+      [
+        {
+          title: 'Evaluating your financial situation',
+          description:
+            "I'll help provide a holistic overview of your finances so you have a starting point for decision-making.",
+          icon: 'tabler:chart-donut',
+        },
+        {
+          title: 'Teaching money management strategies',
+          description:
+            "Whether you're scared of budgeting, need to pay down debt, build credit, or want a fresh look at your current process, I'm here to help.",
+          icon: 'tabler:chart-bar',
+        },
+        {
+          title: 'Discussing short and long-term goals',
+          description:
+            "Are you wondering if you can quit your job, buy a house, retire early, or start a cat sanctuary? Let's discuss what's possible!",
+          icon: 'tabler:rocket',
+        },
+      ],
+      [
+        {
+          title: 'Brainstorming creative solutions',
+          description:
+            "There are so many ways to live a balanced life that break outside the norm. Let's find one that works for you!",
+          icon: 'tabler:bulb',
+        },
+        {
+          title: 'Educating about money topics',
+          description:
+            "I'll teach you about different topics so you're equipped to make your own decisions.",
+          icon: 'tabler:books',
+        },
+        {
+          title: 'Answering your money questions',
+          description:
+            "My process is non-judgmental. Let me answer your questions in a safe and comfortable environment.",
+          icon: 'tabler:question-mark',
+        },
+      ],
+    ]}
+    />
+  <!-- Steps Widget ****************** -->
+  <Steps
+    title="What are the steps of money coaching?"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Getting to Know You(rself)</span>',
+        description:
+          "Through a free 30-minute intro call and introspective questionnaires, I'll develop a custom coaching plan for you with pricing, session goals, and a rough timeline for our sessions together. We'll then review your full financial picture so we both understand your starting point.",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Regular Coaching Sessions</em>',
+        description:
+          "We'll meet once or twice a month (60-90 minute sessions) to work through topics such as budgeting, saving, and brainstorming goals and solutions. We'll determine exercises for you to do before the next meeting to incorporate new systems and habits.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Accountability and Check-Ins</span>',
+        description:
+          "Between longer coaching sessions, we'll have 15-30 minute check-in sessions. This is an opportunity for you to ask questions about the exercises and anything else that's arisen. You can always contact me via email as well.",
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Keep it up! Maintain your habits and implement your newfound decision-making power to guide your financial destiny.',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/IMG_9354.jpg'),
+      alt: 'Annie in Madurodam, a model village in the Netherlands.',
+    }}
+  />
+  
+    <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Everyone is unique, but many folks do have the same questions."
+    highlight="FAQs"
+    items={[
+      [
+        {
+          question: 'How does money coaching work?',
+          answer:
+            "Through empathetic 1:1 sessions, I'll guide you through exercises and ask thoughtful questions to help you gain comfort with your money. We'll work at a pace that's comfortable for you.",
+        },
+        {
+          question: 'How does your process work?',
+          answer:
+            "After a free intro call and questionnaire, I'll create a custom coaching plan for you that will outline our timeline, milestones, goals, and pricing. The process adapts to your effort level - the more you put in, the more you get out.",
+        },
+        {
+          question: "How much does it cost?",
+          answer:
+            "I am a fee-only coach, so you pay me directly for my services. I charge either per session or for a package of sessions. You'll know the amount up front before we start working together, and I'll be very transparent.",
+        },
+      ],
+      [
+        {
+          question: "Do you manage money or advise on investments?",
+          answer:
+            "Nope! Your money is yours, and I have no interest in managing it for you. I do not provide investment advice - you should see a licensed professional for help with that.",
+        },
+        {
+          question: "Can you just make a budget for me?",
+          answer:
+            "Sure I could, but you know yourself best. I'm here to teach you how to make a budgeting system that works for you. Think of me as your personal trainer for money - you still have to put in the work, but I'll provide the exercises and accountability.",
+        },
+        {
+          question: "Why would you be interested in helping me?",
+          answer:
+            "Because I feel like this is my way of contributing to society and breaking the system. I love helping people escape the grind and live a life they have control over. It's a fulfilling way to spend my time and creative energy.",
+        },
+      ],
+    ]}
+  />
+  <CallToAction
+    callToAction={{
+      text: "Schedule your free intro call today!",
+      href: '/contact',
+    }}
+  >
+    <Fragment slot="title">
+      Let me help you find your balance.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Gain control of your finances and determine the direction of your life. I'm here to help you find your balance, whatever that may be.
+    </Fragment>
+  </CallToAction>  
+
+
+
+</Layout>

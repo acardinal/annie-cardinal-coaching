@@ -1,18 +1,18 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-import Headline from '~/components/blog/Headline.astro';
+// import Headline from '~/components/blog/Headline.astro';
 
 import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import LatestPosts from '~/components/blog/LatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+// import Note from '~/components/widgets/Note.astro';
+// import Features from '~/components/widgets/Features.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+// import Steps from '~/components/widgets/Steps.astro';
+// import Content from '~/components/widgets/Content.astro';
+// import LatestPosts from '~/components/blog/LatestPosts.astro';
+// import FAQs from '~/components/widgets/FAQs.astro';
+// import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import { headerData } from '~/data';
@@ -42,9 +42,8 @@ const meta = {
         image={{ src: import('~/assets/images/IMG_8751.jpg'), alt: 'Annie bouldering outside for the first time ever!' }}
     >
     <Fragment slot="title">
-        Ready to get started? Schedule your <span class="text-accent dark:text-white highlight">free intro call</span> today!</span>
+        Ready to get started? Schedule your <span class="text-accent dark:text-white highlight">free intro call</span> today!
     </Fragment>
-
     <Fragment slot="subtitle">
         <span class="hidden sm:inline">
             During the intro call, we'll determine if we're a fit for each other and discuss the next steps in the process.<br /><br /> Just send me an email at <span class="font-semibold"><a href="mailto:anniecardinalcoaching@gmail.com">anniecardinalcoaching@gmail.com</a></span>.<br /><br />
@@ -53,7 +52,6 @@ const meta = {
     </Fragment>
     </Hero2>
 
-  </section>
   <CallToAction
     callToAction={{
       text: "Ready for what's next?",
@@ -68,7 +66,5 @@ const meta = {
       Gain control of your finances and determine the direction of your life. I'm here to help you find your balance, whatever that may be.
     </Fragment>
   </CallToAction>  
-
-
 
 </Layout>

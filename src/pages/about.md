@@ -7,7 +7,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 I'm a personal finance nerd and former mechanical engineer and design studio lead. I enjoy living a simple life with my husband and two cats in Minneapolis, Minnesota. I spend my days sketching at the local rock garden, biking to the grocery store for that night's dinner ingredients, bouldering with friends, and savoring the little things in life.
 
-But as David Byrne asked, [Well, how did I get here?](https://www.youtube.com/watch?v=5IsSpAOD6K8&pp=ygUSb25jZSBpbiBhIGxpZmV0aW1l)
+But as David Byrne asked, <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=5IsSpAOD6K8&pp=ygUSb25jZSBpbiBhIGxpZmV0aW1l">Well, how did I get here?</a>
 
 ![Slow and steady wins the race! A sunny day in Boston.](../assets/images/IMG_8420.jpg)
 

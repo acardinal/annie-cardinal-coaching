@@ -6,7 +6,7 @@ import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 // import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-// import Features2 from '~/components/widgets/Features2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 // import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
@@ -176,34 +176,25 @@ const meta = {
   />
 -->
   
-  <!-- Testimonials Widget ************** -->
-<!--
+  <!-- Testimonials Widget ************** removed subtitle="Kind words from satisfied customers"-->
   <Features2
     title="What people are saying about Annie"
-    subtitle="Kind words from satisfied customers"
     highlight="Testimonials"
     items={[
       {
-        title: 'Headers',
+        title: 'Planning for the Future',
         description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
-        icon: 'flat-color-icons:template',
+          'Annie went above and beyond in helping me assess the financial feasibility of taking a work sabbatical. What sets her apart is her constructive attitude and empathetic approach combined with her meticulous attention to detail and engineering background. Going through my spreadsheets and plans, she highlighted areas where my risk-aversion made me hedge more than I needed to. Annie made it comfortable to discuss uncertainties such as planning for children, long-term care, and inflation. She also introduced me to new financial strategies such as bond tents. - Jennifer',
+        icon: 'flat-color-icons:landscape',
       },
       {
-        title: 'Heros',
+        title: 'Facing Fears and Passing Down Knowledge',
         description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
-        icon: 'flat-color-icons:todo-list',
+          'As an aging millennial who grew up in a low-income household, my relationship with money is complicated and was shaped by a family that didn’t openly discuss finances/budgeting.  Facing my fears and taking ownership of my finances felt very daunting until I connected with Annie. She understood that money isn’t just about budgets and investments, it’s about working through the emotions, triggers and bad habits that keep us from taking control of our financial situation. Her compassion and customized coaching approach have empowered me to be more proactive in how I budget, invest, and spend my money. Thanks to Annie, I now have the knowledge and confidence to make more informed money decisions and I am so glad I get to pass those learnings on to my kids so that they can work towards achieving financial freedom earlier in life. - Jessica',
+        icon: 'flat-color-icons:money-transfer',
       },
     ]}
   />
- -->
   <!-- HighlightedPosts Widget ******* -->
 
   <LatestPosts

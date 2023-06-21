@@ -3,7 +3,7 @@ publishDate: 2023-06-21T00:00:00Z
 draft: false
 title: My Top 5 Mindset Influences
 excerpt: When embarking on my personal finance journey, there were a few very particularly influential resources that helped me cultivate and shape my mindset.
-image: ~/assets/images/Farmers_Market.jpg
+image: ~/assets/images/Park_Sketching.jpg
 category: Resources
 canonical: https://www.anniecardinalcoaching.com/top-5-influences
 ---
@@ -14,13 +14,15 @@ When embarking on my personal finance journey, there were a few very particularl
 
 [Mr. Money Mustache](https://www.mrmoneymustache.com/) is where my money awareness really started in earnest. MMM is the original financial independence blogger. His site is full of inspiration and tools toward becoming less dependent on stuff and restructuring your life so that you’ll have more time to do the things you want. He takes an extreme approach that may be too much for most people, but my takeaways boiled down to two things: Build the life that you want, then save for that lifestyle without increasing spending (known as lifestyle creep). Once my husband and I found a balance between our lifestyle and budget, anything extra went toward savings. Any pay raises or windfalls were immediately invested, which helped us save for the future. My favorite activities are low-cost or free, such as biking to the park for a picnic, having friends over for a home-cooked meal, reading a book, or following a watercolor tutorial on YouTube. I've learned that living a satisfying and fulfilling life doesn't have to be expensive.
 
-These savings and our sustainable budget allowed us to take a sabbatical from work and move to Minnesota for a better quality of life. We wouldn't have been able to do this without those savings. I needed a break from work burnout and was able to prioritize my mental health without the stress of a job. We didn't have work lined up in Minnesota but knew it was where we wanted to be and that it was time to leave Texas. We thought we were saving for retirement, but having those savings gave us the opportunity to change our lives for the better right now. _Learn more on my [about](/about) page._
+These savings and our sustainable budget allowed us to take a sabbatical from work and move to Minnesota for a better quality of life. We wouldn't have been able to do this without those savings. I needed a break from work burnout and was able to prioritize my mental health without the stress of a job. We didn't have work lined up in Minnesota but knew it was where we wanted to be and that it was time to leave Texas. We thought we were saving for retirement, but having those savings gave us the opportunity to change our lives for the better right now.
+
+_Learn more on my [about](/about) page._
 
 We still travel and go out for meals. We are just deliberate, and we find cost-effective options where it matters. We're happy to fly on budget airlines with only a personal item since that carry-on fee can instead go towards a meal at our destination. I always carry a snack bar in my fanny pack so that I don't impulsively spend money on a crummy overpriced pastry when my blood sugar drops. Instead, I can use that money to buy a treat when it's worth it and I'd enjoy the purchase.
 
 Mr. Money Mustache taught me to prioritize what really matters. For me, that's quality time with friends and family and having free time rather than things. Your priorities may be different, but creating a sustainable budget will help you with your goals, whatever they might be.
 
-![Sketching in the local park by my house.](./Park_Sketching.jpg)
+![I saved a baby squirrel that was on the bike path!](./Annie_Squirrel.jpg)
 
 ## 2. You Need a Budget
 

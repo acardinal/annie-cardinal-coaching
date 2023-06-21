@@ -10,8 +10,6 @@ tags:
 canonical: https://www.anniecardinalcoaching.com/welcome-post
 ---
 
-Welcome! I'm so excited that you're here. If you're interested in gaining control of your money but don't know where to start, you're in the right place.
-
 ## Why I Became a Money Coach
 
 I started Annie Cardinal Coaching as a way to provide others with the perspective and tools needed to build they life they want. Money can be a touchy subject, and I know that a lot of folks have trauma or shame surrounding money. I wanted to create a safe space for people to talk about money, ask questions, and take steps to build a healthy relationship with their finances.

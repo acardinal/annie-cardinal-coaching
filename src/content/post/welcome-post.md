@@ -2,7 +2,7 @@
 publishDate: 2023-05-25T00:00:00Z
 draft: false
 title: Welcome!
-excerpt: I'm so excited that you're interested in gaining control of your money.
+excerpt: Welcome! I'm so excited that you're here. If you're interested in gaining control of your money but don't know where to start, you're in the right place.
 image: ~/assets/images/IMG_3412.jpg
 category: Miscellaneous
 tags:

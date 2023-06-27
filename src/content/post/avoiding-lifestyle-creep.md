@@ -1,7 +1,7 @@
 ---
 publishDate: 2023-06-27T00:00:00Z
 draft: false
-title: How to Avoid Lifestyle Creep
+title: Reducing the Risk of Lifestyle Creep
 excerpt: When we see additional cash flow, such as a raise, tax refund, or windfall, it's tempting to spend that money. You're able to spend on things you couldn't before and can improve your quality of life.
 image: ~/assets/images/barbecue.jpg
 category: Resources
